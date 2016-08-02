@@ -1,0 +1,66 @@
+{
+    "city": {
+        "key1": {
+            "cityId": "key1",
+            "cityName": "Banglore"
+        },
+        "key2": {
+            "cityId": "key2",
+            "cityName": "Haryana"
+        }
+    },
+    "zone": {
+        "key1": {
+            "zkey1": {
+                "zoneId": "zkey1",
+                "zoneName": "North Banglore"
+            },
+            "zkey2": {
+                "zoneId": "zkey2",
+                "zoneName": "South Banglore"
+            }
+        },
+        "key2": {
+            "zkey3": {
+                "zoneId": "zkey3",
+                "zoneName": "North Haryana"
+            }
+        }
+    },
+    "location": {
+        "key1": {
+            "zkey1": {
+                "lkey1": {
+                    "locationId": "lkey1",
+                    "locationName": "Location X Banglore"
+                },
+                "lkey2": {
+                    "locationId": "lkey2",
+                    "locationName": "Location Y Banglore"
+                }
+            },
+            "zkey2": {
+                "lkey3": {
+                    "locationId": "lkey1",
+                    "locationName": "Location XX Banglore"
+                },
+                "lkey4": {
+                    "locationId": "lkey2",
+                    "locationName": "Location YY Banglore"
+                }
+            }
+        },
+        "key2": {
+            "zkey3": {
+                "lkey5": {
+                    "locationId": "lkey5",
+                    "locationName": "Location A Haryana"
+                },
+                "lkey6": {
+                    "locationId": "lkey6",
+                    "locationName": "Location B Haryana"
+                }
+            }
+        }
+    }
+}

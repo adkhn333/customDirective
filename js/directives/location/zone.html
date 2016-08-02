@@ -1,0 +1,12 @@
+<label class="item item-input item-select" ng-class="color">
+    <div class="input-label">
+        {{label}}
+    </div>
+    <select ng-change="triggerLocation({selectedZone: model})" ng-model="model">
+        <option 
+            ng-repeat="zone in zones" 
+            ng-value="zone.zoneId">
+            {{zone.zoneName}}
+        </option>
+    </select>
+</label>

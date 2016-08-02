@@ -1,0 +1,12 @@
+<label class="item item-input item-select" ng-class="color">
+    <div class="input-label">
+        {{label}}
+    </div>
+    <select ng-change="selector()" ng-model="model">
+        <option 
+            ng-repeat="city in cities" 
+            ng-value="city.cityId">
+                {{city.cityName}}
+        </option>
+    </select>
+</label>

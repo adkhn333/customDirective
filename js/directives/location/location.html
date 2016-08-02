@@ -1,0 +1,12 @@
+<label class="item item-input item-select" ng-class="color">
+    <div class="input-label">
+        {{label}}
+    </div>
+    <select ng-change="triggerLocation({selectedLocation: model})" ng-model="model">
+        <option 
+            ng-repeat="location in locations" 
+            ng-value="location.locationId">
+            {{location.locationName}}
+        </option>
+    </select>
+</label>

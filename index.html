@@ -1,0 +1,51 @@
+<html ng-app="app">
+    <head>
+        <title>
+            Form
+        </title>
+        <!--<link rel="stylesheet" href="lib/angular-material.css">-->
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="lib/angular.js"></script>
+
+        <script src="js/appDemo.js"></script>
+        <!--<script src="js/config.js"></script>-->
+        <!--<script src="js/service.js"></script>
+        <script src="js/directives/address.js"></script>
+        <script src="js/controller.js"></script>-->
+    </head>
+    <body ng-controller="mainCtrl">
+        <f2u-city
+            label="City"
+            model="selectedCity"
+            trigger-zone="selectZone(selectedCity)" 
+            cities="cities"
+            color="dark">
+        </f2u-city>
+        <f2u-zone 
+            label="Zone" 
+            trigger-location="selectLocationByZone(selectedCity, selectedZone)" 
+            model="selectedZone"
+            zones="zones">
+        </f2u-zone>
+        <f2u-location
+            label="Location" 
+            locations="locations"
+            model="selectedLocation"
+            color="dark"
+            trigger-location="selectLocation(selectedLocation)">
+        </f2u-location>
+
+        <div>
+            <label>City Value=</label>
+            <span>{{selectedCity}}</span>
+        </div>
+        <div>
+            <label>Zone Value=</label>
+            <span>{{selectedZone}}</span>
+        </div>
+        <div>
+            <label>Location Value=</label>
+            <span>{{selectedLocation}}</span>
+        </div>
+    </body>
+</html>
